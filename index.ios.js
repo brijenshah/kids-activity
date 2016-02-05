@@ -1,11 +1,10 @@
 'use strict';
 import React, {
   AppRegistry,
-  Component,
   StyleSheet,
   NavigatorIOS
 } from 'react-native';
-import Main from './app/views/Main';
+import SearchActivityView from './app/views/SearchActivityView';
 
 const KidsActivity = () => {
   return (
@@ -13,7 +12,7 @@ const KidsActivity = () => {
       style={styles.container}
       initialRoute={{
         title: 'Search Activities',
-        component: Main
+        component: SearchActivityView
       }}/>
   );
 }
@@ -21,7 +20,7 @@ const KidsActivity = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'white',
   }
 });
 
