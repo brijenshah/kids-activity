@@ -9,33 +9,33 @@ import React, {
 
 const SearchActivityBar = ({onSearchChange, isLoading, onFocus}) => {
   return (
-    <View style={styles.searchBar}>
-      <TextInput
-        autoCapitalize="none"
-        autoCorrect={false}
-        onChange={onSearchChange}
-        placeholder="Search an activity..."
-        onFocus={onFocus}
-        style={styles.searchBarInput} />
-      <ActivityIndicatorIOS
-        animating={isLoading}
-        style={styles.spinner} />
-    </View>
+      <View style={styles.searchBar}>
+        <TextInput
+          autoCapitalize="none"
+          autoCorrect={false}
+          onChange={onSearchChange}
+          placeholder="Search an activity..."
+          onFocus={onFocus}
+          style={styles.searchBarInput} />
+      </View>
   );
 }
 
 const styles = StyleSheet.create({
   searchBar: {
     marginTop: 64,
-    padding: 3,
-    paddingLeft: 8,
     flexDirection: 'row',
-    alignItems: 'center',
+    backgroundColor: 'grey',
+    height: 36
   },
   searchBarInput: {
-    fontSize: 15,
+    fontSize: 14,
     flex: 1,
-    height: 30,
+    height: 20,
+    backgroundColor: 'white',
+    alignSelf : 'center',
+    margin: 6,
+    padding: 6
   },
   spinner: {
     width: 30,

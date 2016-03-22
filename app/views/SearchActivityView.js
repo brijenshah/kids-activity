@@ -316,7 +316,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   noMoviesText: {
-    marginTop: 80,
+    marginTop: 10,
     color: '#888888',
   },
   separator: {
